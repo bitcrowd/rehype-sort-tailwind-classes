@@ -12,9 +12,7 @@ jobs:
         with:
           node-version: ${{matrix.node}}
       - run: npm install --global npm@latest
-      - run: npm install
-      - run: npm run build
-      - run: npm test
+      - run: npm install-ci-test
     strategy:
       matrix:
         node:

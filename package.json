@@ -26,8 +26,9 @@
     "index.ts"
   ],
   "scripts": {
-    "build": "rimraf \"*.d.ts\" \"*.js\" && tsc",
-    "prepare": "npm run build",
+    "build": "tsc",
+    "clean": "rimraf \"*.d.ts\" \"*.js\"",
+    "prepare": "npm run clean && npm run build",
     "test": "node --conditions development test.js"
   },
   "dependencies": {
