@@ -3,12 +3,12 @@ import { rehype } from "rehype";
 import test from "tape";
 import { u } from "unist-builder";
 
-import min from "./index.js";
+import plugin from "./index.js";
 
 test("rehype-sort-tailwind-classes", (t) => {
   t.deepEqual(
     rehype()
-      .use(min)
+      .use(plugin)
       .runSync(
         u("root", [
           h(".z-50.z-10.container.text-left.md:text-center.justify-center", {
