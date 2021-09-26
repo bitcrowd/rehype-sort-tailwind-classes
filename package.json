@@ -23,7 +23,7 @@
   },
   "files": [
     "index.d.ts",
-    "index.ts"
+    "index.js"
   ],
   "scripts": {
     "build": "tsc",
