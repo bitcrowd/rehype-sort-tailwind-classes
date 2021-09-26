@@ -29,6 +29,7 @@
     "build": "tsc",
     "clean": "rimraf \"*.d.ts\" \"*.js\"",
     "prepare": "npm run clean && npm run build",
+    "format": "prettier --ignore-path .gitignore --write .",
     "test": "node --conditions development test.js"
   },
   "dependencies": {
@@ -40,6 +41,7 @@
     "@types/hast": "^2.3.4",
     "@types/tape": "^4.13.2",
     "hastscript": "^7.0.2",
+    "prettier": "^2.4.1",
     "rehype": "^12.0.0",
     "rimraf": "^3.0.2",
     "tape": "^5.3.1",

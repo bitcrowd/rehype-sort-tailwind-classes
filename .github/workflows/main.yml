@@ -3,9 +3,12 @@ on:
   - pull_request
   - push
 jobs:
-  main:
+  test:
     name: ${{matrix.node}}
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [12, 14, 16]
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -13,9 +16,4 @@ jobs:
           node-version: ${{matrix.node}}
       - run: npm install --global npm@latest
       - run: npm install-ci-test
-    strategy:
-      matrix:
-        node:
-          - 12
-          - 14
-          - 16
+      - run: npm run format && git diff --exit-code
