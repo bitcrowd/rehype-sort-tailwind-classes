@@ -56,9 +56,16 @@ rehype input.html --use rehype-sort-tailwind-classes --output output.html
 <div class="container z-10 z-50 justify-center text-left md:text-center"></div>
 ```
 
+## Options
+
+The plugin accepts any options supported by [Tailwind Classes Sorter][tcs].
+
+Additionally, it supports a `pluginOrder: string[]` option to augment the default plugin ordering.
+
 ## License
 
 [MIT](./LICENSE)
 
 [esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
 [npm]: https://docs.npmjs.com/cli/install
+[tcs]: https://github.com/Acidic9/tailwind-classes-sorter
