@@ -1,5 +1,5 @@
 {
-  "name": "rehype-sort-tailwind-classes",
+  "name": "@bitcrowd/rehype-sort-tailwind-classes",
   "version": "1.0.0",
   "description": "rehype plugin to sort Tailwind CSS classes",
   "license": "MIT",
